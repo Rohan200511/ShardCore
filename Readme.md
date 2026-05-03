@@ -21,7 +21,14 @@ ShardCore is designed as a multi-node system where each node runs on a separate 
 - 🔹 Fast in-memory storage using unordered_map
 
 ---
+## 🧠 Consistent Hashing Explained
 
+Consistent hashing is used to distribute keys across nodes efficiently with minimal data movement when nodes are added or removed.
+
+📖 Read detailed explanation:
+👉 https://www.geeksforgeeks.org/system-design/consistent-hashing/
+
+---
 ## 🏗️ Architecture
 
 
