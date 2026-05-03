@@ -1,4 +1,4 @@
-# 🚀 ShardCore – Distributed Key-Value Store in C++
+# 🛡️ ShardCore – Distributed Key-Value Store in C++
 
 ShardCore is a distributed key-value storage system built in C++ that simulates core concepts of modern backend systems such as Redis, DynamoDB, and Cassandra.
 
@@ -18,7 +18,6 @@ ShardCore is designed as a multi-node system where each node runs on a separate 
 - 🔹 Consistent hashing for efficient data distribution
 - 🔹 Replication for fault tolerance
 - 🔹 Append-only log (AOF) for persistence
-- 🔹 TCP-based client-server communication
 - 🔹 Fast in-memory storage using unordered_map
 
 ---
@@ -26,7 +25,7 @@ ShardCore is designed as a multi-node system where each node runs on a separate 
 ## 🏗️ Architecture
 
 
-Client → Hash Ring → Node (Server) → KV Store → Disk (AOF)
+        Client → Hash Ring → Node (Server) → KV Store → Disk (AOF)
 
 
 ### Components:
@@ -88,21 +87,25 @@ Each node maintains its own log file:
 
 ### 1. Start servers
 
-shardcore 9090
-shardcore 9091
-shardcore 9092
+        shardcore 9090
+        
+        shardcore 9091
+        
+        shardcore 9092
 
 
 ### 2. Run client
 
-client
+        client
 
 
 ### 3. Example commands
 
-PUT user1 Rohan
-GET user1
-DELETE user1
+        PUT user1 Rohan
+        
+        GET user1
+        
+        DELETE user1
 
 
 ---
